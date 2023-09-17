@@ -123,7 +123,7 @@ if selected2 == "Events":
        c18.write("You're attending Sustainability Market on 10/1/2023!")
 
     c1, c2, c3, c4= container.columns(4)
-    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/earth org.png"), width = 150)
+    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/WSD.png"), width = 150)
     c2.subheader("Event:")
     c2.write("World Spay Day")
     c3.subheader("Organizer:")
@@ -138,7 +138,7 @@ if selected2 == "Events":
        c6.write("You're attending the Humane Society Veterinary Medical Association on 2/28/2024!")
     
     c1, c2, c3, c4= container.columns(4)
-    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/earth org.png"), width = 150)
+    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/WSSD.jpeg"), width = 150)
     c2.subheader("Event:")
     c2.write("World Soil Day")
     c3.subheader("Organizer:")
@@ -153,7 +153,7 @@ if selected2 == "Events":
        c6.write("You're attending World Soil Day on 12/5/2023!")
     
     c1, c2, c3, c4= container.columns(4)
-    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/earth org.png"), width = 150)
+    c1.image(Image.open("/Users/monish/Desktop/Immunization Proof/WAD.jpeg"), width = 150)
     c2.subheader("Event:")
     c2.write("World Animal Day")
     c3.subheader("Organizer:")
@@ -183,7 +183,7 @@ if selected2 == "Home":
     st.write("- To read and chat about current environmental topics visit the Discuss page")
     st.write("- Go to the Profile page to create and log into your account")
     
-    co2tab, biotab, nontab = st.tabs(["CO2 Emissions by Country", "Biodiversity Loss", "Local Nonprofits"])
+    co2tab, nontab = st.tabs(["CO2 Emissions by Country", "Local Nonprofits"])
     
     with co2tab:
 
@@ -296,9 +296,6 @@ if selected2 == "Home":
         folium_static(n)           
             
             
-
-    with biotab:
-            g = folium.Map(location=[40.4237,86.9212], zoom_start=2)
               
 
 
@@ -306,7 +303,6 @@ if selected2 == "Home":
 if selected2 == "Purdue":
     st.text(" - An estimated 845,320 metric tons of carbon dioxide was emitted from West Lafayette. ")
     st.text(" - Indiana expects to reduce carbon emissions from our Indiana fleet by 63% by 2030 and 88% by 2040.")
-    st.text(" - In Indiana, we expect to reduce carbon emissions from our Indiana fleet by 63% by 2030 and 88% by 2040.")
     st.text(" - We hope you can find ways to contribute to reaching this goal!")
     image = Image.open("West Lafayette Emissions.png")
     st.image(image, width = 500)
@@ -461,4 +457,3 @@ if selected2 == "Discuss":
       
 
         
-
